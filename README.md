@@ -1,7 +1,7 @@
 # simple_proxy_scraper
 This is a simple code which uses selenium with chromedriver and the urllib module to scrap working proxies from https://free-proxy-list.net/ 
 
-#modules you need
+# modules you need
 1.selenium 
 2.urllib
 
