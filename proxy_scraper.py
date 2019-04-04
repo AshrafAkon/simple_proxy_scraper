@@ -1,3 +1,6 @@
+#the algorithms that I used there just get the work done. you are always welcome to make it better. 
+#this script is used to scrap working proxy from https://free-proxy-list.net/ 
+#what you do with the proxy is in your concern
 from selenium import webdriver
 import time
 import urllib.request as request
@@ -9,7 +12,7 @@ url = 'http://bot.whatismyipaddress.com/'
 
 def give_proxy(n):
     if n <= 10:
-        proxy_driver = webdriver.Chrome('./chromedriver.exe', chrome_options=chrome_options)
+        proxy_driver = webdriver.Chrome('./chromedriver.exe', chrome_options=chrome_options) #replace ./chromedriver.exe to ./chromedriver for debian linux
         proxy_driver.get("https://free-proxy-list.net/")
         raw_proxy = proxy_driver.find_element_by_id("proxylisttable").text.split("\n")[1:11]
         proxy_driver.quit()
